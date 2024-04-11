@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "email_scheduler.Server", "email_scheduler.Server\email_scheduler.Server.csproj", "{4D884A65-8349-45EE-8C44-8F002C4BCB03}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "email_scheduler.client", "email_scheduler.client\email_scheduler.client.esproj", "{BC744791-DE9C-4E89-B759-7DAE1F96B4A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D884A65-8349-45EE-8C44-8F002C4BCB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D884A65-8349-45EE-8C44-8F002C4BCB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D884A65-8349-45EE-8C44-8F002C4BCB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D884A65-8349-45EE-8C44-8F002C4BCB03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC744791-DE9C-4E89-B759-7DAE1F96B4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC744791-DE9C-4E89-B759-7DAE1F96B4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC744791-DE9C-4E89-B759-7DAE1F96B4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC744791-DE9C-4E89-B759-7DAE1F96B4A3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAE4BDBA-BFEA-45DC-9BCA-402F88713450}
+	EndGlobalSection
+EndGlobal

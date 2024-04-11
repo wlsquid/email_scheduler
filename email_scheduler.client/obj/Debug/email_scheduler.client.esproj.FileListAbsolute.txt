@@ -1,0 +1,1 @@
+C:\Users\Wyndham Maxwell PC\repos\email_scheduler\email_scheduler\email_scheduler.client\obj\Debug\email_scheduler.client.esproj.CoreCompileInputs.cache
