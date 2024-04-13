@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using email_scheduler.Server.Data;
 
@@ -11,9 +12,11 @@ using email_scheduler.Server.Data;
 namespace email_scheduler.Server.Migrations
 {
     [DbContext(typeof(EmailSchedulerDbContext))]
-    partial class EmailSchedulerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240413022911_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -261,7 +264,7 @@ namespace email_scheduler.Server.Migrations
 
                     b.HasIndex("UserIdentityId");
 
-                    b.ToTable("Email", (string)null);
+                    b.ToTable("Email");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>

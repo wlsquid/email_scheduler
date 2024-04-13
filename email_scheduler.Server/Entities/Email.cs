@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace email_scheduler.Server.Entities
 {
@@ -16,9 +18,13 @@ namespace email_scheduler.Server.Entities
 
         [Required]
         public Boolean RecurringEmail { get; set; } = false;
-
+        //TODO: want to implement proper deletes later
+        [Required]
+        public Boolean Archived { get; set; } = false;
         public DateTime? EmailExpiry { get; set; }
-
-        public Guid User {  get; set; }
+        [Required]
+        [ForeignKey("User")]
+        public Guid UserId {  get; set; }
+        public virtual ApplicationUser UserIdentity { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 
 using email_scheduler.Server.Data;
+using email_scheduler.Server.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,7 +22,7 @@ namespace email_scheduler.Server
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+            builder.Services.AddIdentityApiEndpoints<ApplicationUser>()
                 .AddEntityFrameworkStores<EmailSchedulerDbContext>();
             builder.Services.AddSwaggerGen();
 
@@ -41,7 +42,7 @@ namespace email_scheduler.Server
 
             app.UseAuthorization();
             app.UseAuthentication();
-            app.MapIdentityApi<IdentityUser>();
+            app.MapIdentityApi<ApplicationUser>();
 
             app.MapControllers();
 
